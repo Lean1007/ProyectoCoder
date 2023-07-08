@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Nunito:wght@700&family=Orbitron&family=Russo+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+ /* INICIO DE HEAD  */
+
+ header{
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: space-between;
+    border-bottom: 2px solid #093D65;
+
+ }
+
+
+ .logo{
+    width: 190px;
+    position: relative;
+    margin: 15px
+}
+
+
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 100px;
+    border: 1px solid #093D65;
+
+
+}
+.menu li a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #093D65;
+}
+.menu li:hover{
+    transform: scale(1.1);
+    /* background-color: #F98E54; */
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.seccion_redes img{
+    width: 35px;
+    margin-right:20px ;
+    text-decoration: none;
+}
+#carrito{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 50px;
+}
+#carrito img{
+    width: 50px;
+
+}
+
+/* FIN DE HEAD */
+
+/* INICIO DE MAIN */
+main{
+    background-color: #093D65;
+    display: inline-block;
+    
+}
+article{
+    background: #659999;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px outset black;
+    border-radius: 10px;
+    display: flex;
+
+}
+.contenedor_textos{
+    flex-direction: column;
+}
+.titulos{
+    font-size: 40px;
+    font-family: "Orbitron";
+    color: #093D65;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+#imagen_cliente_1{
+    width: 200px;
+
+}#imagen_cliente_2{
+    width: 210px;
+
+}
+#imagen_cliente_3{
+    width: 240px;
+
+}
+#imagen_auri{
+    width: 200px;
+    margin: 10px;
+
+
+}
+
+#imagen_silla{
+    width: 200px;
+    margin: 10px;
+}
+#clientes{
+    align-items: center;
+    color: rgb(255, 230, 230);
+    
+}
+
+.imagenes_main{
+    border: 2px outset white;
+    border-radius: 20px;
+}
+
+#articulo_clientes{
+    flex-direction: column;
+}
+#articulo_clientes #division_clientes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+.descripciones{
+    margin: 50px;
+    font-size: 20px;
+    font-family: "Belanosima";
+    color: white;
+
+}
+#wsp{
+    width: 80px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: all 0.3s;
+}
+div a #wsp:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/* FIN DE MAIN */
+
+
+/* INCIO DE FOOTER */
+footer{
+    display: flex;
+    background-color: grey;
+
+    
+}
+#nav_foot{
+    margin-left: 0px;
+    top: 100%;
+    
+
+}
+#nav_foot li {
+    display: inline-block;
+    padding: 0 5px;
+    
+    
+}
+#nav_foot li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#nav_foot li a:hover{
+    color: #093D65;
+}
+/* FIN DE FOOTER */
+
+/* Menu nosotros */
+.quienes_somos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+
+}
+#ubicacion_direccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.info_extra{
+    display: flex;
+    flex-direction: row;
+}
+.secciones_info_extra{
+    background: #659999;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px outset black;
+    border-radius: 10px;
+    display: flex;
+    
+}
+.seccion_info_extra{
+    background: #659999;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px outset black;
+    border-radius: 10px;
+}
+#horarios{
+    display: flex;
+    flex-direction: column;
+}
+.textos_info_extra{
+    margin: 10px;
+    text-align: center;
+}
+#titulos_info_extra{
+    color: #093D65;
+    font-size: 22px;
+    font-family: "Russo One";
+}
+#informacion{
+    color: white;
+    font-family: "Nunito";
+    text-align: center;
+}
+
+
+
