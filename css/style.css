@@ -54,6 +54,7 @@
 
 }
 
+
 .seccion_redes img{
     width: 35px;
     margin-right:20px ;
@@ -69,10 +70,13 @@
     width: 50px;
 
 }
+#carrito img:hover{
+    transform: scale(1.2);
+}
 
 /* FIN DE HEAD */
 
-/* INICIO DE MAIN */
+/* INICIO DE MAIN INDEX*/
 main{
     background-color: #093D65;
     display: inline-block;
@@ -161,7 +165,7 @@ div a #wsp:hover{
 }
 
 
-/* FIN DE MAIN */
+/* FIN DE MAIN INDEX*/
 
 
 /* INCIO DE FOOTER */
@@ -191,8 +195,8 @@ footer{
     color: #093D65;
 }
 /* FIN DE FOOTER */
-
-/* Menu nosotros */
+/* ---------------------------------------------------------------------------------------------- */
+/* INICIO MAIN NOSOTROS */
 .quienes_somos{
     display: flex;
     flex-direction: column;
@@ -248,6 +252,38 @@ footer{
     text-align: center;
 }
 
+/* Fin de main nosotros */
+/* ---------------------------------------------------------------------------------------------- */
+/* Inicio main promociones */
+    #silla_banner{
+        width: 1350px;
+        border-radius: 5px;
+        margin: 10px;
+        
+    }
+
+/* Fin main promociones */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* Inicio Main productos */
+
+/* Fin Main Productos */
+/* ---------------------------------------------------------------------------------------------- */
+/* INICIO MAIN  TUTORIALES*/
+    #articulo_tutoriales{
+        width: 1362px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+/* FIN MAIN TUTORIALES */
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* INICIO RESPONSIVE */
 
 @media (max-width: 1200px){
     /* POR AHORA NADA ACÁ  */
@@ -274,13 +310,17 @@ footer{
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     header{
+        height: 250px;
         flex-direction: column;
     }
+
     .menu li{
-        margin-bottom: 60px;
+        position: relative;
+        justify-content: center;
         padding: 1 5px;
+        margin-top: 0px;
     }
 
     main{
@@ -290,16 +330,15 @@ footer{
     .seccion_redes { 
         align-items: start;
         margin-right: 400px;
-        justify-content: flex-start;
     }
     .logo{
-        width: 180px;
+        width: 170px;
         position: relative;
-        margin: 15px
+        margin-top: 5px;
+        margin-bottom: 0px;
     }
     #carrito{
-        justify-content: end;
-        
+        justify-content: end;   
         margin-right: 50px;
     }
     #carrito img{
@@ -313,16 +352,110 @@ footer{
         justify-content: space-between;
         margin: 10px;
     
+    }  
+    footer{
+        display: none;
     }
 
 
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
+    header{
+        height: 200px;       
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+    .logo{
+        width: 150px;
 
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    
+    .seccion_redes{
+        position: absolute;
+        display: flex;
+        left: 0;
+        bottom: 0;
+    }
+
+    
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #imagen_auri{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .titulos{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: none;
+    }
+    
 }
 @media (max-width: 320px){
+    footer{
+        display: none;
+    }
+
+    .quienes_somos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #ubicacion_direccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+    .info_extra{
+        display: flex;
+        flex-direction: column;
+    }
+    .secciones_info_extra{
+        background: #659999;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: 2px outset black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .seccion_info_extra{
+        display: flex;
+        flex-direction: column;
+    }
+    #horarios{
+        display: flex;
+        flex-direction: column;
+    }
+   
 
 }
 
