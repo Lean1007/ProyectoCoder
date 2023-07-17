@@ -255,11 +255,23 @@ footer{
 /* Fin de main nosotros */
 /* ---------------------------------------------------------------------------------------------- */
 /* Inicio main promociones */
+    .articulos_promos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo_promos{
+        text-align: center;
+        align-items: center;
+    }
     #silla_banner{
-        width: 1350px;
+        width: 1325px;
         border-radius: 5px;
         margin: 10px;
         
+    }
+    #promo_mes{
+        width: 1325px;
     }
 
 /* Fin main promociones */
