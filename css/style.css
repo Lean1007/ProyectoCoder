@@ -171,8 +171,9 @@ div a #wsp:hover{
 /* INCIO DE FOOTER */
 footer{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: grey;
-
     
 }
 #nav_foot{
@@ -197,6 +198,11 @@ footer{
 /* FIN DE FOOTER */
 /* ---------------------------------------------------------------------------------------------- */
 /* INICIO MAIN NOSOTROS */
+.main_nosotros{
+    display: flex;
+    flex-direction: column;
+
+}
 .quienes_somos{
     display: flex;
     flex-direction: column;
@@ -256,6 +262,7 @@ footer{
 /* ---------------------------------------------------------------------------------------------- */
 /* Inicio main promociones */
     .articulos_promos{
+        width: 1345px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -280,11 +287,75 @@ footer{
 /* ---------------------------------------------------------------------------------------------- */
 /* Inicio Main productos */
 
+   .menu_productos{
+    display: flex;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   }
+
+   .layout {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+   .imagen_productos{
+    width: 320px;
+    height: 340px;
+    border-radius: 20px 20px 0px 0px;
+   }
+   .contenedor_p{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-bottom: 20px;
+
+   }
+   .contenedor_p>div{
+        box-shadow: 0px 0px 5px 0px rgb(0, 0,0,0.75);
+        background: #FF512F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        border-radius: 20px;
+   }
+   .informacion_p{
+    height: 150px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+   }
+   .informacion_p>h5{
+    font-size: 25px;
+    font-weight: 300;
+   }
+
+   #botones_p{
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 4px;
+    padding: 0 20px;
+    text-decoration: none;
+    border: 1px solid #093D65;
+   }
+   #botones_p:hover{
+    transform: scale(1.2);
+   }
+
+
+
+
 /* Fin Main Productos */
 /* ---------------------------------------------------------------------------------------------- */
 /* INICIO MAIN  TUTORIALES*/
     #articulo_tutoriales{
-        width: 1362px;
+        width: 1345px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -311,14 +382,21 @@ footer{
     
     }
     .menu li{
-
         position: relative;
         align-items: center;
         padding: 0 10px;
-
-    
     }
-    
+
+    .titulos{
+        font-size: 25px;
+    }
+
+    #informacion{
+        font-size: 10px;
+    }
+    .descripciones{
+        font-size: 15px;
+    }
 
 }
 
@@ -365,10 +443,7 @@ footer{
         margin: 10px;
     
     }  
-    footer{
-        display: none;
-    }
-
+ 
 
 
 }
@@ -418,59 +493,8 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    footer{
-        display: none;
-    }
     
 }
-@media (max-width: 320px){
-    footer{
-        display: none;
-    }
-
-    .quienes_somos{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .ubicacion{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    #ubicacion_direccion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 5px;
-    }
-    .info_extra{
-        display: flex;
-        flex-direction: column;
-    }
-    .secciones_info_extra{
-        background: #659999;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        border: 2px outset black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .seccion_info_extra{
-        display: flex;
-        flex-direction: column;
-    }
-    #horarios{
-        display: flex;
-        flex-direction: column;
-    }
-   
-
-}
-
 
 
 
