@@ -230,6 +230,7 @@ footer{
     border: 2px outset black;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     
 }
 .seccion_info_extra{
@@ -241,6 +242,7 @@ footer{
 }
 #horarios{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .textos_info_extra{
@@ -256,6 +258,12 @@ footer{
     color: white;
     font-family: "Nunito";
     text-align: center;
+}
+.mapa{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px outset white;
 }
 
 /* Fin de main nosotros */
@@ -490,6 +498,15 @@ footer{
         justify-content: center;
     }
     main{
+        display: flex;
+        flex-direction: column;
+    }
+    .mapa{
+        height: 200px;
+        width: 180px;
+    }
+
+    .info_extra{
         display: flex;
         flex-direction: column;
     }
