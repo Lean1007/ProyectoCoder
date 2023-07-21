@@ -61,10 +61,8 @@
     text-decoration: none;
 }
 #carrito{
-    position: absolute;
-    right: 0;
-    bottom: 0;
     margin-right: 50px;
+    margin-top: 90px;
 }
 #carrito img{
     width: 50px;
@@ -174,6 +172,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: grey;
+    justify-content: space-between;
     
 }
 #nav_foot{
@@ -185,16 +184,32 @@ footer{
 #nav_foot li {
     display: inline-block;
     padding: 0 5px;
+    margin-top: 5px;
     
     
 }
 #nav_foot li a{
     color: #ffffff;
+    font-size: 17px;
     text-decoration: none;
+    
 }
 #nav_foot li a:hover{
     color: #093D65;
 }
+
+.seccion_redes_2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.seccion_redes_2 img{
+    width: 28px;
+    height: 28px;
+    margin-right:20px ;
+    text-decoration: none;
+}
+
+
 /* FIN DE FOOTER */
 /* ---------------------------------------------------------------------------------------------- */
 /* INICIO MAIN NOSOTROS */
@@ -356,19 +371,27 @@ footer{
     transform: scale(1.2);
    }
 
-
-
-
 /* Fin Main Productos */
 /* ---------------------------------------------------------------------------------------------- */
 /* INICIO MAIN  TUTORIALES*/
+
+   .menu_tutoriales{
+    display: flex;
+    flex-direction: column;
+   }
+
     #articulo_tutoriales{
-        width: 1345px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
         
     }
+    .videos{
+        width: 560px;
+        height: 315px;
+    }
+
 
 /* FIN MAIN TUTORIALES */
 
