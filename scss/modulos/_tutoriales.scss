@@ -1,0 +1,22 @@
+.menu_tutoriales{
+    @include main;
+    .articulo_tutoriales{
+        @extend .menu_tutoriales;
+        align-items: center;
+        text-align: center;
+        div{
+            .titulos{
+                @include titulos;
+            }
+        }
+
+        div{
+            .videos{
+                width: 560px;
+                height: 315px;
+            }
+        }
+    }
+
+    
+}

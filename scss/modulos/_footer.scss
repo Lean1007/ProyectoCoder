@@ -1,0 +1,40 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: grey;
+    justify-content: space-between;
+    #nav_foot{
+        margin-left: 0px;
+        top: 100%;
+        li{
+            display: inline-block;
+            padding: 0 5px;
+            margin-top: 5px;
+            a{
+                color: #ffffff;
+                font-size: 17px;
+                text-decoration: none;
+                
+                &:hover{
+                    color:$fondo-azul;
+                }
+            }
+        }
+    }
+
+    .seccion_redes_2{
+        display: flex;
+        flex-direction: row-reverse;
+        a{
+            #imagenes{
+                width: 28px;
+                height: 28px;
+                margin-right:20px ;
+                text-decoration: none;
+            
+
+            }
+        }
+    }
+}

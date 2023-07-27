@@ -1,0 +1,15 @@
+.icono_wsp{
+    a{
+        #wsp{
+            width: 80px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+
+        } 
+    }
+}

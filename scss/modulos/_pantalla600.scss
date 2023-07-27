@@ -1,0 +1,42 @@
+@media (max-width:600px){
+    // header{
+    //     height: 250px;
+    //     flex-direction: column;
+    // }
+
+    .menu li{
+        position: relative;
+        justify-content: center;
+        padding: 1 5px;
+        margin-top: 0px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 170px;
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    #carrito{
+        justify-content: end;   
+        margin-right: 50px;
+    }
+    #carrito img{
+        width: 40px;
+    
+    }
+    #articulo_clientes #division_clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+    
+    }  
+ 
+}

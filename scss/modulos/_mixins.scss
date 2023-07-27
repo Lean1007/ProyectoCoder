@@ -1,0 +1,60 @@
+@mixin titulos{
+    font-size: 40px;
+    font-family: $letra-titulos;
+    color: $fondo-azul;
+    margin-top: 10px;
+    text-align: center;
+
+    @if (max-width:1024px){
+        font-size: 25px;
+    }
+
+}
+
+@mixin descripciones{
+    margin: 50px;
+    font-size: 20px;
+    font-family: $letra-descripciones;
+    color: white;
+
+    @if (max-width:1024px){      
+        font-size: 15px;
+        
+    }
+}
+
+@mixin textos_info_extra{
+    margin: 10px;
+    text-align: center;
+}
+@mixin titulos_info_extra{
+    color: $fondo-azul;
+    font-size: 22px;
+    font-family: $letras-titulos-extra;
+
+}
+@mixin informacion{
+    color: white;
+    font-family: $letras-informacion;
+    text-align: center;
+
+    @if (max-width:1024px){ 
+        font-size: 10px;
+    }
+}
+@mixin imagenes_promociones{
+    width: $imagenes_promociones;
+    border-radius: 5px;
+    margin: 10px;
+
+    @if (max-with:1024px){
+        width: 900px;
+    }
+}
+
+@mixin main{
+    display: flex;
+    flex-direction: column;
+
+}
+

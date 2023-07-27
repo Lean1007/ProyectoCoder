@@ -1,0 +1,92 @@
+.main_nosotros{
+    @include main;
+
+    .quienes_somos{
+        @extend .main_nosotros;
+        text-align: center;
+        .titulos{
+            @include titulos;
+        }
+        .descripciones{
+            @include descripciones;
+        }
+    }
+
+    .ubicacion{
+        @extend .main_nosotros;
+        div{
+            .titulos{
+                @include titulos;       
+            }
+        }
+        #ubicacion_direccion{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            .mapa{
+                width: 400px;
+                height: 300px;
+                border-radius: 5px;
+                border: 2px outset white;
+            }
+            .descripciones{
+                @include descripciones;
+            }
+        }
+    }
+
+    .info_extra{
+        display: flex;
+        flex-direction: row;
+        .seccion_info_extra{
+            background: $color-info-extra1;
+            background: $color-info-extra2;
+            background: $color-info-extra3;
+            border: 2px outset black;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #metodos_pago{
+            .textos_info_extra{
+                @include textos_info_extra;
+            }
+            #titulos_info_extra{
+                @include titulos_info_extra;
+            }
+
+            #informacion{
+                @include informacion;
+
+            }
+        }
+        #horarios{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .textos_info_extra{
+                @include textos_info_extra;
+            }
+            #titulos_info_extra{
+                @include titulos_info_extra;
+            }
+            #informacion{
+                @include informacion;
+            }
+        }
+
+        #garantia{
+            .textos_info_extra{
+                @include textos_info_extra;   
+            }
+            #titulos_info_extra{
+                @include titulos_info_extra;
+
+            }
+             #informacion{
+                @include informacion;
+            }
+        }
+    }
+}

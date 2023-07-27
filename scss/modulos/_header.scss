@@ -1,0 +1,93 @@
+header{
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    background: $color-header1;
+    background: $color-header2;
+    background: $color-header3;
+    justify-content: space-between;
+    border-bottom: 2px solid #093D65;
+
+    @if(max-width:600px){
+        height: 250px;
+        flex-direction: column;
+    }
+
+
+    a{
+        .logo{
+            width: 190px;
+            position: relative;
+            margin: 15px;
+
+            @if (max-width:600px){
+                width: 170px;
+                position: relative;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    nav{
+        .menu{
+            li{
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                align-items: center;
+                padding: 0 20px;
+                background-color: white;
+                border-radius: 20px;
+                margin-top: 100px;
+                border: 1px solid $fondo-azul;
+
+                @if(max-width:600px){
+                    position: relative;
+                    justify-content: center;
+                    padding: 1 5px;
+                    margin-top: 0px;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    background:$color-nav1;
+                    background:$color-nav2;
+                    background:$color-nav3;
+                }
+                a{
+                    font-size: 22px;
+                    text-decoration: none;
+                    color: $fondo-azul;
+
+                }
+            }
+        }
+    }
+    
+    #carrito{
+        margin-right: 50px;
+        margin-top: 90px;
+
+        @if (max-width:600px){
+            justify-content: end;   
+            margin-right: 50px;
+        }
+        a{
+            img{
+                width: 50px;
+
+                @if (max-width:600px){
+                    width: 40px;
+                }
+
+
+                &:hover{
+                    transform: scale(1.2);
+
+                }
+            }
+        }
+    }
+
+}
