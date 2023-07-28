@@ -12,10 +12,8 @@ main{
         div{
             #silla_banner{
                 @include imagenes_promociones;
+                width: 98%;
 
-                @if (max: with 1024px){
-                    width: 900px;
-                }
             }
         }
     }
@@ -29,6 +27,7 @@ main{
         div{
             #promo_mes{
                 @include imagenes_promociones;
+                width: 98%;
 
 
             }

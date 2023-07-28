@@ -9,28 +9,24 @@ header{
     justify-content: space-between;
     border-bottom: 2px solid #093D65;
 
-    @if(max-width:600px){
-        height: 250px;
-        flex-direction: column;
-    }
-
-
     a{
         .logo{
-            width: 190px;
+            width: 180px;
             position: relative;
-            margin: 15px;
-
-            @if (max-width:600px){
-                width: 170px;
-                position: relative;
-                margin-top: 5px;
-                margin-bottom: 0px;
-            }
+            margin: 10px;
         }
     }
 
     nav{
+        #check{
+            display: none;
+        }
+        .bar-btn{
+            fa-solid fa-bars{
+                display: none;
+            }
+           
+        }
         .menu{
             li{
                 list-style: none;
@@ -40,15 +36,15 @@ header{
                 padding: 0 20px;
                 background-color: white;
                 border-radius: 20px;
-                margin-top: 100px;
+                margin-top: 80px;
                 border: 1px solid $fondo-azul;
 
-                @if(max-width:600px){
-                    position: relative;
-                    justify-content: center;
-                    padding: 1 5px;
-                    margin-top: 0px;
-                }
+                // @if(max-width:600px){
+                //     position: relative;
+                //     justify-content: center;
+                //     padding: 1 5px;
+                //     margin-top: 0px;
+                // }
                 &:hover{
                     transform: scale(1.1);
                     background:$color-nav1;
@@ -69,7 +65,8 @@ header{
         margin-right: 50px;
         margin-top: 90px;
 
-        @if (max-width:600px){
+        @if (max-width:1024px){
+            margin-top: 0px;
             justify-content: end;   
             margin-right: 50px;
         }

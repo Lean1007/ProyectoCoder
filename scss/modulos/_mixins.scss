@@ -17,10 +17,7 @@
     font-family: $letra-descripciones;
     color: white;
 
-    @if (max-width:1024px){      
-        font-size: 15px;
-        
-    }
+
 }
 
 @mixin textos_info_extra{
@@ -38,18 +35,12 @@
     font-family: $letras-informacion;
     text-align: center;
 
-    @if (max-width:1024px){ 
-        font-size: 10px;
-    }
+
 }
 @mixin imagenes_promociones{
-    width: $imagenes_promociones;
     border-radius: 5px;
-    margin: 10px;
+    margin-left: 10px;
 
-    @if (max-with:1024px){
-        width: 900px;
-    }
 }
 
 @mixin main{

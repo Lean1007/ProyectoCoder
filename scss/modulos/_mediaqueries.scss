@@ -1,0 +1,147 @@
+@media (max-width:1024px){
+     #silla_banner{
+        @include imagenes_promociones;
+           width: 1000px;
+    
+    }
+    .titulos{
+        font-size: 4px;
+    }
+
+}
+@media (max-width:800px){
+    //Promociones 
+    #silla_banner{
+        @include imagenes_promociones;
+        width: 700px;
+    }
+}
+
+@media (max-width:600px){
+    //Header
+    header{
+        height: 150px;
+        flex-direction: row;
+    
+        a{
+            .logo{
+                width: 160px;
+                position: relative;
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+        }
+        nav{
+            .menu{
+                li{
+                    display: flex;
+                    padding: 1 5px;
+                    margin-top: 0px;
+
+                }
+            }
+        }
+        #carrito{
+            margin-right: 50px;
+            margin-top: 0px;
+            justify-content: end;   
+            a{
+                img{
+                    width: 40px;
+    
+                }
+            }
+        }
+    
+    }
+//Index
+
+            #division_clientes{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px;
+                #imagen_cliente_1{
+                    width: 200px;   
+    
+               }
+               #imagen_cliente_2{
+                    width: 210px;
+               }
+               #imagen_cliente_3{
+                    width: 240px;
+               }
+            }
+        
+//WhatsApp
+    .icono_wsp{
+        a{
+            #wsp{
+                width: 60px;    
+            } 
+        }
+    }
+
+//Productos
+    .menu_productos{
+        display: flex;
+        background: $color-productos1;
+        background: $color-productos2;
+        background: $color-productos3;
+    .layout{
+       width: 100%;
+       display: flex;
+       gap: 16px;
+       flex-wrap: wrap;
+       justify-content: center;
+
+        }    
+    }
+
+}
+
+@media (max-width:480px){
+    //Footer
+
+    footer{
+        #nav_foot{
+            li{
+                a{
+                    color: #ffffff;
+                    font-size: 14px;
+                    text-decoration: none;
+
+                }
+            }
+        }
+        .seccion_redes_2{
+            a{
+                #imagenes{
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+    }
+
+    //Index
+    main{
+        article{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    //Tutoriales
+
+    .menu_tutoriales{
+        .articulo_tutoriales{
+            div{
+                .videos{
+                    width: 450px;
+                }
+            }
+        }
+    }
+}

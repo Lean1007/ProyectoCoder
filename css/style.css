@@ -14,17 +14,17 @@ header {
   background: linear-gradient(to left, #2c3e50, #bdc3c7);
   justify-content: space-between;
   border-bottom: 2px solid #093D65;
-  height: 250px;
-  flex-direction: column;
 }
 header a .logo {
-  width: 190px;
+  width: 180px;
   position: relative;
-  margin: 15px;
-  width: 170px;
-  position: relative;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin: 10px;
+}
+header nav #check {
+  display: none;
+}
+header nav .bar-btn fa-solid fa-bars {
+  display: none;
 }
 header nav .menu li {
   list-style: none;
@@ -34,12 +34,8 @@ header nav .menu li {
   padding: 0 20px;
   background-color: white;
   border-radius: 20px;
-  margin-top: 100px;
+  margin-top: 80px;
   border: 1px solid #093D65;
-  position: relative;
-  justify-content: center;
-  padding: 1 5px;
-  margin-top: 0px;
 }
 header nav .menu li:hover {
   transform: scale(1.1);
@@ -55,6 +51,7 @@ header nav .menu li a {
 header #carrito {
   margin-right: 50px;
   margin-top: 90px;
+  margin-top: 0px;
   justify-content: end;
   margin-right: 50px;
 }
@@ -103,7 +100,6 @@ main article .contenedor_textos .descripciones {
   font-size: 20px;
   font-family: "Belanosima";
   color: white;
-  font-size: 15px;
 }
 main .articulo_derecha div .titulos {
   font-size: 40px;
@@ -118,7 +114,6 @@ main .articulo_derecha div .descripciones {
   font-size: 20px;
   font-family: "Belanosima";
   color: white;
-  font-size: 15px;
 }
 main .articulo_derecha div #imagen_auri {
   width: 200px;
@@ -206,7 +201,6 @@ footer .seccion_redes_2 a #imagenes {
   font-size: 20px;
   font-family: "Belanosima";
   color: white;
-  font-size: 15px;
 }
 .main_nosotros .ubicacion div .titulos {
   font-size: 40px;
@@ -233,7 +227,6 @@ footer .seccion_redes_2 a #imagenes {
   font-size: 20px;
   font-family: "Belanosima";
   color: white;
-  font-size: 15px;
 }
 .main_nosotros .info_extra {
   display: flex;
@@ -261,7 +254,6 @@ footer .seccion_redes_2 a #imagenes {
   color: white;
   font-family: "Nunito";
   text-align: center;
-  font-size: 10px;
 }
 .main_nosotros .info_extra #horarios {
   display: flex;
@@ -281,7 +273,6 @@ footer .seccion_redes_2 a #imagenes {
   color: white;
   font-family: "Nunito";
   text-align: center;
-  font-size: 10px;
 }
 .main_nosotros .info_extra #garantia .textos_info_extra {
   margin: 10px;
@@ -296,7 +287,6 @@ footer .seccion_redes_2 a #imagenes {
   color: white;
   font-family: "Nunito";
   text-align: center;
-  font-size: 10px;
 }
 
 .icono_wsp a #wsp {
@@ -328,11 +318,9 @@ main .articulos_promos div .titulos {
   font-size: 25px;
 }
 main .articulos_promos div #silla_banner {
-  width: 1325px;
   border-radius: 5px;
-  margin: 10px;
-  width: 900px;
-  width: 900px;
+  margin-left: 10px;
+  width: 98%;
 }
 main .articulos_promos div .titulos {
   font-size: 40px;
@@ -343,10 +331,9 @@ main .articulos_promos div .titulos {
   font-size: 25px;
 }
 main .articulos_promos div #promo_mes {
-  width: 1325px;
   border-radius: 5px;
-  margin: 10px;
-  width: 900px;
+  margin-left: 10px;
+  width: 98%;
 }
 
 .menu_tutoriales, .menu_tutoriales .articulo_tutoriales {
@@ -434,10 +421,95 @@ main .articulos_promos div #promo_mes {
 }
 
 @media (max-width: 1024px) {
-  li {
+  #silla_banner {
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 1000px;
+  }
+  .titulos {
+    font-size: 4px;
+  }
+}
+@media (max-width: 800px) {
+  #silla_banner {
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 700px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 150px;
+    flex-direction: row;
+  }
+  header a .logo {
+    width: 160px;
     position: relative;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  header nav .menu li {
+    display: flex;
+    padding: 1 5px;
+    margin-top: 0px;
+  }
+  header #carrito {
+    margin-right: 50px;
+    margin-top: 0px;
+    justify-content: end;
+  }
+  header #carrito a img {
+    width: 40px;
+  }
+  #division_clientes {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 10px;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  #division_clientes #imagen_cliente_1 {
+    width: 200px;
+  }
+  #division_clientes #imagen_cliente_2 {
+    width: 210px;
+  }
+  #division_clientes #imagen_cliente_3 {
+    width: 240px;
+  }
+  .icono_wsp a #wsp {
+    width: 60px;
+  }
+  .menu_productos {
+    display: flex;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+  }
+  .menu_productos .layout {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  footer #nav_foot li a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  footer .seccion_redes_2 a #imagenes {
+    width: 23px;
+    height: 23px;
+  }
+  main article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu_tutoriales .articulo_tutoriales div .videos {
+    width: 450px;
   }
 }
 
