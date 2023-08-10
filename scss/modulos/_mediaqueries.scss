@@ -145,3 +145,45 @@
         }
     }
 }
+
+@media (max-width:414px){
+
+    //NOSOTROS
+    .main_nosotros{
+        display: flex;
+        flex-direction: column;
+        .ubicacion{
+            #ubicacion_direccion{
+                display: flex;
+                flex-direction: column;
+                .mapa{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    //TUTORIALES
+    .menu_tutoriales{
+        @include main;
+        .articulo_tutoriales{
+            @extend .menu_tutoriales;
+            align-items: center;
+            text-align: center;
+    
+            div{
+    
+                .videos{
+                    width: auto;
+                    height: 215px;
+                    margin: 10px;
+                }
+
+            }
+        }
+    
+        
+    }
+
+
+}

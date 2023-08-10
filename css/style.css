@@ -133,7 +133,7 @@ main #articulo_clientes div .titulos {
 main #articulo_clientes #division_clientes {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px;
 }
 main #articulo_clientes #division_clientes #imagen_cliente_1 {
@@ -319,7 +319,7 @@ main .articulos_promos div .titulos {
 }
 main .articulos_promos div #silla_banner {
   border-radius: 5px;
-  margin-left: 10px;
+  margin: 10px;
   width: 98%;
 }
 main .articulos_promos div .titulos {
@@ -332,8 +332,46 @@ main .articulos_promos div .titulos {
 }
 main .articulos_promos div #promo_mes {
   border-radius: 5px;
-  margin-left: 10px;
+  margin: 10px;
   width: 98%;
+}
+main .articulos_promos div .titulos {
+  font-size: 40px;
+  font-family: "Orbitron";
+  color: #093D65;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+main .articulos_promos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .articulos_promos div #black_friday {
+  border-radius: 5px;
+  margin: 10px;
+  width: 98%;
+}
+main .articulos_promos div .titulos {
+  font-size: 40px;
+  font-family: "Orbitron";
+  color: #093D65;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+main .articulos_promos div #articulo-a-ingresar {
+  border-radius: 5px;
+  margin: 10px;
+  width: 98%;
+}
+main .articulos_promos div .descripciones {
+  margin: 50px;
+  font-size: 20px;
+  font-family: "Belanosima";
+  color: white;
 }
 
 .menu_tutoriales, .menu_tutoriales .articulo_tutoriales {
@@ -355,6 +393,13 @@ main .articulos_promos div #promo_mes {
 .menu_tutoriales .articulo_tutoriales div .videos {
   width: 560px;
   height: 315px;
+  margin: 10px;
+}
+.menu_tutoriales .articulo_tutoriales div .descripciones {
+  margin: 50px;
+  font-size: 20px;
+  font-family: "Belanosima";
+  color: white;
 }
 
 .menu_productos {
@@ -423,7 +468,7 @@ main .articulos_promos div #promo_mes {
 @media (max-width: 1024px) {
   #silla_banner {
     border-radius: 5px;
-    margin-left: 10px;
+    margin: 10px;
     width: 1000px;
   }
   .titulos {
@@ -433,7 +478,7 @@ main .articulos_promos div #promo_mes {
 @media (max-width: 800px) {
   #silla_banner {
     border-radius: 5px;
-    margin-left: 10px;
+    margin: 10px;
     width: 700px;
   }
 }
@@ -510,6 +555,32 @@ main .articulos_promos div #promo_mes {
   }
   .menu_tutoriales .articulo_tutoriales div .videos {
     width: 450px;
+  }
+}
+@media (max-width: 414px) {
+  .main_nosotros, .main_nosotros .quienes_somos, .main_nosotros .ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_nosotros .ubicacion #ubicacion_direccion {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_nosotros .ubicacion #ubicacion_direccion .mapa {
+    width: auto;
+  }
+  .menu_tutoriales, .menu_tutoriales .articulo_tutoriales {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu_tutoriales .articulo_tutoriales {
+    align-items: center;
+    text-align: center;
+  }
+  .menu_tutoriales .articulo_tutoriales div .videos {
+    width: auto;
+    height: 215px;
+    margin: 10px;
   }
 }
 

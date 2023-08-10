@@ -11,9 +11,16 @@
         }
 
         div{
+
             .videos{
                 width: 560px;
                 height: 315px;
+                margin: 10px;
+            }
+            .descripciones{
+                @include descripciones;
+
+
             }
         }
     }

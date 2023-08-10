@@ -28,8 +28,41 @@ main{
             #promo_mes{
                 @include imagenes_promociones;
                 width: 98%;
+            }
+        }
+    }
+    .articulos_promos{
+        div{
+            .titulos{
+                @include titulos;
+            }
+        }
 
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            #black_friday{
+                @include imagenes_promociones;
+                width: 98%;
+            }
+        }
+    }
+    .articulos_promos{
+        div{
+            .titulos{
+                @include titulos;
+            }
+        }
 
+        div{
+            #articulo-a-ingresar{
+                @include imagenes_promociones;
+                width: 98%;
+            }
+            .descripciones{
+                @include descripciones;
             }
         }
     }
